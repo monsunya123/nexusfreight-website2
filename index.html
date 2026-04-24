@@ -17,6 +17,19 @@ header {
     color: white;
     padding: 80px 20px;
     text-align: center;
+    position: relative;
+}
+
+header .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 250px;
+    height: 150px;
+}
+
+header h1 {
+    display: none;
 }
 
 header h1 {
@@ -50,7 +63,7 @@ h2 {
     text-align: center;
     margin-bottom: 40px;
 }
-<img src="logistics.jpg" style="width:100%; border-radius:10px; margin-bottom:20px;">
+
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -75,14 +88,17 @@ footer {
 
 <body>
 
-<header>
 <header style="
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg');
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('logistics.jpg');
 background-size: cover;
 background-position: center;
 color: white;
 padding: 100px 20px;
+position: relative;
 ">
+    <img src="logo.png" class="logo" alt="Nexusfreight">
+    <p>Your trusted partner for seamless logistics across New Zealand and beyond</p>
+    <button>Get a Quote</button>
 </header>
 
 <section>
@@ -90,7 +106,7 @@ padding: 100px 20px;
 <div class="services">
 
 <div class="card">
-<img src="large-item.jpg" style="width:100%; border-radius:10px;">
+<img src="large-item.jpeg" style="width:100%; border-radius:10px;">
 <h3>Large Item Shipping</h3>
 <p>Door-to-door delivery for bulky goods such as furniture and oversized cargo.</p>
 </div>
@@ -106,6 +122,7 @@ padding: 100px 20px;
 </div>
 
 <div class="card">
+<img src="warehouse.jpg" style="width:100%; border-radius:10px;">
 <h3>3PL & Last-Mile</h3>
 <p>Warehousing, pick & pack and final delivery across New Zealand.</p>
 </div>
